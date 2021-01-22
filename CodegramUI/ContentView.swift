@@ -9,25 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var posty : [Post] = postsData
-    
     var body: some View {
-        VStack(alignment: .center, spacing: 0, content: {
-            NavbarView()
-//                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                .padding(.horizontal)
-            Divider()
-                .padding(.vertical)
-            ScrollView(.vertical, showsIndicators: false, content: {
-                
-                ForEach(posty) { item in
-                    PostItemView(post: item)
-                }//: Loop
-                
-            })//: ScrollView
+        
+        TabView {
             
-            Spacer()
-        })//: VStack
+            FeedView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Feed")
+                }//: TabItem
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }//: TabItem
+            
+        }//: TabView
+        .edgesIgnoringSafeArea(.top)
+        .accentColor(Color.primary)
     }
 }
 

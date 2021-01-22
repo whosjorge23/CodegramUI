@@ -15,4 +15,5 @@ struct Post : Identifiable {
     var caption : String
     var like : String
     var location : String
+    var realName : String
 }

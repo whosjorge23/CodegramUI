@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3B958A25BADAB900F35671 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B958925BADAB900F35671 /* FeedView.swift */; };
+		ED6A98DB25BB0CAE00C6E585 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98DA25BB0CAE00C6E585 /* ProfileView.swift */; };
+		ED6A98E025BB0D4000C6E585 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98DF25BB0D4000C6E585 /* HeaderView.swift */; };
+		ED6A98E325BB0E7500C6E585 /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98E225BB0E7500C6E585 /* ProfileInfoView.swift */; };
+		ED6A98E725BB12B700C6E585 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98E625BB12B700C6E585 /* ProfileModel.swift */; };
+		ED6A98EA25BB132700C6E585 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98E925BB132700C6E585 /* ProfileData.swift */; };
+		ED6A98ED25BB156C00C6E585 /* PicGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A98EC25BB156C00C6E585 /* PicGridView.swift */; };
 		EDC8E15125B9C22300D24725 /* CodegramUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E15025B9C22300D24725 /* CodegramUIApp.swift */; };
 		EDC8E15325B9C22300D24725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E15225B9C22300D24725 /* ContentView.swift */; };
 		EDC8E15525B9C22600D24725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC8E15425B9C22600D24725 /* Assets.xcassets */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED3B958925BADAB900F35671 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		ED6A98DA25BB0CAE00C6E585 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		ED6A98DF25BB0D4000C6E585 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ED6A98E225BB0E7500C6E585 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
+		ED6A98E625BB12B700C6E585 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		ED6A98E925BB132700C6E585 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		ED6A98EC25BB156C00C6E585 /* PicGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicGridView.swift; sourceTree = "<group>"; };
 		EDC8E14D25B9C22300D24725 /* CodegramUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodegramUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC8E15025B9C22300D24725 /* CodegramUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodegramUIApp.swift; sourceTree = "<group>"; };
 		EDC8E15225B9C22300D24725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED6A98DD25BB0CB600C6E585 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A98DF25BB0D4000C6E585 /* HeaderView.swift */,
+				ED6A98EC25BB156C00C6E585 /* PicGridView.swift */,
+				ED6A98E225BB0E7500C6E585 /* ProfileInfoView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		EDC8E14425B9C22300D24725 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +88,15 @@
 			children = (
 				EDC8E15025B9C22300D24725 /* CodegramUIApp.swift */,
 				EDC8E15225B9C22300D24725 /* ContentView.swift */,
+				ED6A98DA25BB0CAE00C6E585 /* ProfileView.swift */,
+				ED3B958925BADAB900F35671 /* FeedView.swift */,
 				EDC8E16025B9C2DF00D24725 /* View */,
+				EDCC6C0525BAD26F007CDCEA /* Model */,
+				EDCC6C0725BAD27F007CDCEA /* Data */,
 				EDC8E15425B9C22600D24725 /* Assets.xcassets */,
 				EDC8E15925B9C22600D24725 /* Info.plist */,
 				EDC8E15625B9C22600D24725 /* Preview Content */,
 				EDC8E16A25B9D05700D24725 /* Launch Screen.storyboard */,
-				EDCC6C0525BAD26F007CDCEA /* Model */,
-				EDCC6C0725BAD27F007CDCEA /* Data */,
 			);
 			path = CodegramUI;
 			sourceTree = "<group>";
@@ -86,6 +112,7 @@
 		EDC8E16025B9C2DF00D24725 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED6A98DD25BB0CB600C6E585 /* Profile */,
 				EDC8E16125B9C2EC00D24725 /* Feed */,
 			);
 			path = View;
@@ -104,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC8E16D25B9D4B000D24725 /* PostModel.swift */,
+				ED6A98E625BB12B700C6E585 /* ProfileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC8E17025B9D54400D24725 /* PostData.swift */,
+				ED6A98E925BB132700C6E585 /* ProfileData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -186,12 +215,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6A98DB25BB0CAE00C6E585 /* ProfileView.swift in Sources */,
+				ED6A98E025BB0D4000C6E585 /* HeaderView.swift in Sources */,
+				ED3B958A25BADAB900F35671 /* FeedView.swift in Sources */,
 				EDC8E15325B9C22300D24725 /* ContentView.swift in Sources */,
+				ED6A98E325BB0E7500C6E585 /* ProfileInfoView.swift in Sources */,
 				EDC8E17125B9D54400D24725 /* PostData.swift in Sources */,
 				EDC8E16E25B9D4B000D24725 /* PostModel.swift in Sources */,
 				EDC8E16825B9C49900D24725 /* PostItemView.swift in Sources */,
+				ED6A98E725BB12B700C6E585 /* ProfileModel.swift in Sources */,
 				EDC8E15125B9C22300D24725 /* CodegramUIApp.swift in Sources */,
+				ED6A98ED25BB156C00C6E585 /* PicGridView.swift in Sources */,
 				EDC8E16325B9C30700D24725 /* NavbarView.swift in Sources */,
+				ED6A98EA25BB132700C6E585 /* ProfileData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
