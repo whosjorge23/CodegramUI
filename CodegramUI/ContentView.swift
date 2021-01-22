@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var posty : [Post] = postsData
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .center, spacing: 0, content: {
+            NavbarView()
+//                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .padding(.horizontal)
+            Divider()
+                .padding(.vertical)
+            ScrollView(.vertical, showsIndicators: false, content: {
+                
+                ForEach(posty) { item in
+                    PostItemView(post: item)
+                }//: Loop
+                
+            })//: ScrollView
+            
+            Spacer()
+        })//: VStack
     }
 }
 

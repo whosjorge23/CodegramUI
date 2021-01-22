@@ -11,6 +11,11 @@
 		EDC8E15325B9C22300D24725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E15225B9C22300D24725 /* ContentView.swift */; };
 		EDC8E15525B9C22600D24725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC8E15425B9C22600D24725 /* Assets.xcassets */; };
 		EDC8E15825B9C22600D24725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC8E15725B9C22600D24725 /* Preview Assets.xcassets */; };
+		EDC8E16325B9C30700D24725 /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E16225B9C30700D24725 /* NavbarView.swift */; };
+		EDC8E16825B9C49900D24725 /* PostItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E16725B9C49900D24725 /* PostItemView.swift */; };
+		EDC8E16B25B9D05700D24725 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC8E16A25B9D05700D24725 /* Launch Screen.storyboard */; };
+		EDC8E16E25B9D4B000D24725 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E16D25B9D4B000D24725 /* PostModel.swift */; };
+		EDC8E17125B9D54400D24725 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC8E17025B9D54400D24725 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		EDC8E15425B9C22600D24725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC8E15725B9C22600D24725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDC8E15925B9C22600D24725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC8E16225B9C30700D24725 /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		EDC8E16725B9C49900D24725 /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
+		EDC8E16A25B9D05700D24725 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EDC8E16D25B9D4B000D24725 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		EDC8E17025B9D54400D24725 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +64,13 @@
 			children = (
 				EDC8E15025B9C22300D24725 /* CodegramUIApp.swift */,
 				EDC8E15225B9C22300D24725 /* ContentView.swift */,
+				EDC8E16025B9C2DF00D24725 /* View */,
 				EDC8E15425B9C22600D24725 /* Assets.xcassets */,
 				EDC8E15925B9C22600D24725 /* Info.plist */,
 				EDC8E15625B9C22600D24725 /* Preview Content */,
+				EDC8E16A25B9D05700D24725 /* Launch Screen.storyboard */,
+				EDCC6C0525BAD26F007CDCEA /* Model */,
+				EDCC6C0725BAD27F007CDCEA /* Data */,
 			);
 			path = CodegramUI;
 			sourceTree = "<group>";
@@ -67,6 +81,39 @@
 				EDC8E15725B9C22600D24725 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDC8E16025B9C2DF00D24725 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8E16125B9C2EC00D24725 /* Feed */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC8E16125B9C2EC00D24725 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8E16225B9C30700D24725 /* NavbarView.swift */,
+				EDC8E16725B9C49900D24725 /* PostItemView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		EDCC6C0525BAD26F007CDCEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8E16D25B9D4B000D24725 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDCC6C0725BAD27F007CDCEA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8E17025B9D54400D24725 /* PostData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC8E16B25B9D05700D24725 /* Launch Screen.storyboard in Resources */,
 				EDC8E15825B9C22600D24725 /* Preview Assets.xcassets in Resources */,
 				EDC8E15525B9C22600D24725 /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC8E15325B9C22300D24725 /* ContentView.swift in Sources */,
+				EDC8E17125B9D54400D24725 /* PostData.swift in Sources */,
+				EDC8E16E25B9D4B000D24725 /* PostModel.swift in Sources */,
+				EDC8E16825B9C49900D24725 /* PostItemView.swift in Sources */,
 				EDC8E15125B9C22300D24725 /* CodegramUIApp.swift in Sources */,
+				EDC8E16325B9C30700D24725 /* NavbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
